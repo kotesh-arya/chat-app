@@ -1,2 +1,2 @@
 ## Chat APP
-![image](https://user-images.githubusercontent.com/69259490/227223233-356aab30-802f-4ff9-9fd3-326115882220.png)
+![image](https://user-images.githubusercontent.com/69259490/227593607-3d257463-13dc-4b8c-a62e-8bcdd601e58d.png)
