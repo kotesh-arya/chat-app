@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BubbleContainer = () => {
+const BubbleContainer = ({message, sender}) => {
   return (
     <div className="chat chat-start">
       <div className="chat-image avatar">
@@ -9,7 +9,7 @@ const BubbleContainer = () => {
         </div>
       </div>
       <div className="chat-bubble">
-        It was you who would bring balance to the Force  balance to the Force balance to the Force balance to the Force balance to the Force  balance to the Force balance to the Force balance to the Force balance to the Force balance to the Force balance to the Force balance to the Force balance to the Force
+       {message}
       </div>
     </div>
   );
