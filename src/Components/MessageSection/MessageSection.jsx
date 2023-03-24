@@ -12,7 +12,6 @@ const MessageSection = () => {
   const [sendingError, setSendingError] = useState(null);
 
   const handleSubmit = async () => {
-    console.log(sendingMessage);
     if (!sendingMessage) {
       setSendingError('Please enter some message to send');
     } else {
@@ -21,13 +20,10 @@ const MessageSection = () => {
         .insert([{ sender: 'kotesh', message: sendingMessage }])
         .select();
       if (error) {
-        console.log(error);
         setSendingError('Please enter valid message to send');
       }
       if (data) {
-        console.log(data);
         setSendingError('');
-        console.log(sendingMessage);
         setSendingMessage(""); //this should be executed after successfull API call which add the message
       }
     }
@@ -38,11 +34,9 @@ const MessageSection = () => {
       if (error) {
         setError('Failed to Load the Messages, please try again');
         setMessages(null);
-        console.log(error);
       } else {
         setMessages(data);
         setError(null);
-        console.log(data);
       }
     };
     getMessages();
